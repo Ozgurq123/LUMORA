@@ -1,138 +1,1069 @@
 
+
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LUMORA | Modern Yaşam</title>
-<meta name="description" content="LUMORA ile yaşam alanlarına modern dokunuşlar kat. Evin için özenle seçilmiş ürünleri keşfet.">
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
-:root{--bg:#f8f7f3;--ink:#20231f;--muted:#77786f;--accent:#a7a889}
-body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink)}
-a{color:inherit;text-decoration:none}
-.topbar{text-align:center;background:#252821;color:white;padding:10px;font-size:11px;letter-spacing:1px}
-header{display:flex;align-items:center;justify-content:space-between;padding:22px 6%;border-bottom:1px solid #e6e4dc}
-.logo{font-size:27px;font-weight:700;letter-spacing:5px}
-nav{display:flex;gap:22px;font-size:13px}
-.hero{padding:70px 6%;display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
-.eyebrow{font-size:11px;letter-spacing:3px;color:var(--muted);margin-bottom:20px}
-h1{font-size:clamp(38px,6vw,66px);line-height:1.05;letter-spacing:-2px;margin-bottom:22px}
-.hero p{font-size:15px;color:var(--muted);line-height:1.8;max-width:420px}
-.btn{display:inline-block;background:var(--ink);color:white;padding:16px 25px;margin-top:27px;font-size:12px;letter-spacing:1px;border:0;cursor:pointer}
-.hero-art{min-height:390px;background:linear-gradient(145deg,#e5e1d4,#b8b9a4);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
-.hero-art:before{content:"";width:210px;height:270px;border-radius:110px 110px 20px 20px;background:linear-gradient(100deg,#f5f1e5,#9b9d83);box-shadow:25px 30px 55px #77786f66;transform:rotate(-8deg)}
-.hero-art:after{content:"L";position:absolute;font-size:180px;font-weight:bold;color:#ffffff38}
-.section{padding:55px 6%}
-.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:25px;gap:15px}
-h2{font-size:29px;letter-spacing:-1px}
-.section-head p{color:var(--muted);font-size:12px;margin-top:10px}
-.products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
-.product-image{aspect-ratio:4/4.5;background:#e9e6dd;display:flex;align-items:center;justify-content:center;overflow:hidden}
-.product-image img{width:100%;height:100%;object-fit:cover}
-.product-image .symbol{font-size:70px;color:#8b8c76}
-.product-info{padding:15px 0}
-.product-info h3{font-size:14px;font-weight:500;margin-bottom:9px}
-.price{font-size:14px;font-weight:bold}
-.product-info p{font-size:11px;color:var(--muted);margin-top:8px}
-.add{width:100%;margin-top:12px;padding:12px;border:1px solid #d4d2c8;background:transparent;cursor:pointer;font-size:12px}
-.add:hover{background:var(--ink);color:white}
-.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;background:#eeede6;padding:35px 6%;text-align:center}
-.benefits h3{font-size:13px;margin-bottom:9px}
-.benefits p{font-size:11px;line-height:1.7;color:var(--muted)}
-.newsletter{text-align:center;padding:65px 6%}
-.newsletter p{color:var(--muted);margin-top:15px;font-size:13px}
-footer{background:#252821;color:white;padding:35px 6%;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:12px}
-footer p{color:#c4c5bb;margin-top:10px}
-.cart{position:fixed;bottom:18px;right:18px;border:0;background:#252821;color:white;border-radius:30px;padding:15px 20px;box-shadow:0 5px 25px #0002;cursor:pointer}
-@media(max-width:650px){
-header{padding:18px 5%}.logo{font-size:23px}nav{gap:12px;font-size:11px}
-.hero{grid-template-columns:1fr;padding:45px 5%;gap:28px}
-.hero-art{min-height:280px}
-.section{padding:40px 5%}.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-.section-head{align-items:start;flex-direction:column}
-.benefits{grid-template-columns:1fr;gap:28px}
-h2{font-size:25px}
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#151512">
+  <meta name="description" content="LUMORA ile yaşam alanınıza modern, zarif ve işlevsel dokunuşlar katın. Ev ve yaşam ürünlerini keşfedin.">
+  <title>LUMORA | Yaşam Alanına Zarafet Kat</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --black: #171713;
+      --black-soft: #22221d;
+      --cream: #f7f3eb;
+      --cream-dark: #ebe3d5;
+      --gold: #b89555;
+      --gold-light: #d7bd83;
+      --text: #25241f;
+      --muted: #77746c;
+      --white: #fffdf9;
+      --border: rgba(38, 35, 28, .12);
+      --serif: "Playfair Display", Georgia, serif;
+      --sans: "DM Sans", Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background: var(--cream);
+      font-family: var(--sans);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body, button, input { font-family: var(--sans); }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    button { cursor: pointer; }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+
+    .announcement {
+      padding: 10px 16px;
+      color: var(--cream);
+      background: var(--black);
+      text-align: center;
+      font-size: 11px;
+      letter-spacing: 1.2px;
+    }
+
+    .announcement span { color: var(--gold-light); }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(247, 243, 235, .96);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(14px);
+    }
+
+    .nav {
+      width: min(1200px, 92%);
+      min-height: 76px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .logo {
+      font-family: var(--serif);
+      font-size: 29px;
+      font-weight: 600;
+      letter-spacing: 4px;
+    }
+
+    .logo span { color: var(--gold); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 27px;
+      font-size: 12px;
+    }
+
+    .nav-links a:hover { color: var(--gold); }
+
+    .cart-button {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 11px 14px;
+      color: var(--cream);
+      background: var(--black);
+      border: 0;
+      border-radius: 2px;
+      font-size: 12px;
+    }
+
+    .cart-button strong {
+      display: inline-grid;
+      place-items: center;
+      min-width: 20px;
+      height: 20px;
+      padding: 0 5px;
+      color: var(--black);
+      background: var(--gold-light);
+      border-radius: 50px;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      min-height: 530px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background: var(--black);
+      color: var(--cream);
+    }
+
+    .hero-copy {
+      align-self: center;
+      padding: 72px max(8%, calc((100vw - 1200px) / 2));
+      padding-right: 5%;
+      position: relative;
+      z-index: 2;
+    }
+
+    .eyebrow {
+      color: var(--gold-light);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3, p { margin-top: 0; }
+
+    .hero h1 {
+      margin: 23px 0 18px;
+      font-family: var(--serif);
+      font-size: clamp(42px, 5.2vw, 70px);
+      line-height: 1.08;
+      font-weight: 400;
+    }
+
+    .hero h1 em {
+      color: var(--gold-light);
+      font-weight: 400;
+    }
+
+    .hero p {
+      max-width: 410px;
+      color: #d0ccc2;
+      font-size: 14px;
+      line-height: 1.9;
+    }
+
+    .button-gold {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      padding: 15px 22px;
+      color: var(--black);
+      background: var(--gold-light);
+      border: 1px solid var(--gold-light);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      transition: .2s;
+    }
+
+    .button-gold:hover {
+      background: var(--cream);
+      border-color: var(--cream);
+    }
+
+    .hero-image {
+      min-height: 530px;
+      background:
+        linear-gradient(90deg, rgba(23,23,19,.3), transparent 35%),
+        url("https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1400&q=85")
+        center/cover no-repeat;
+    }
+
+    .benefits {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      padding: 27px 5%;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .benefit {
+      text-align: center;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .benefit span {
+      display: block;
+      margin-bottom: 7px;
+      color: var(--gold);
+      font-size: 19px;
+    }
+
+    .benefit small {
+      display: block;
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 10px;
+      font-weight: 400;
+    }
+
+    .section {
+      width: min(1200px, 90%);
+      margin: auto;
+      padding: 84px 0;
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .section-heading h2 {
+      margin: 10px 0 0;
+      font-family: var(--serif);
+      font-size: clamp(30px, 4vw, 43px);
+      font-weight: 400;
+    }
+
+    .section-heading p {
+      max-width: 390px;
+      margin-bottom: 3px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.8;
+    }
+
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-bottom: 28px;
+    }
+
+    .category-button {
+      padding: 11px 16px;
+      color: var(--text);
+      background: transparent;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      font-size: 11px;
+      transition: .2s;
+    }
+
+    .category-button.active,
+    .category-button:hover {
+      color: var(--cream);
+      background: var(--black);
+      border-color: var(--black);
+    }
+
+    .search {
+      width: 100%;
+      max-width: 330px;
+      padding: 13px 15px;
+      margin-bottom: 25px;
+      color: var(--text);
+      background: transparent;
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      outline-color: var(--gold);
+      font-size: 12px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 28px 20px;
+    }
+
+    .product-card { min-width: 0; }
+
+    .product-image-wrap {
+      position: relative;
+      overflow: hidden;
+      background: var(--cream-dark);
+      aspect-ratio: 4 / 4.5;
+    }
+
+    .product-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .5s;
+    }
+
+    .product-card:hover .product-image { transform: scale(1.04); }
+
+    .product-tag {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      padding: 7px 9px;
+      color: var(--black);
+      background: var(--cream);
+      font-size: 9px;
+      letter-spacing: .5px;
+    }
+
+    .product-info { padding: 15px 1px 0; }
+
+    .product-category {
+      margin-bottom: 7px;
+      color: var(--muted);
+      font-size: 10px;
+    }
+
+    .product-title {
+      margin-bottom: 9px;
+      font-family: var(--serif);
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .product-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .product-price {
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .add-button {
+      padding: 10px 12px;
+      color: var(--cream);
+      background: var(--black);
+      border: 1px solid var(--black);
+      font-size: 10px;
+      transition: .2s;
+    }
+
+    .add-button:hover {
+      color: var(--black);
+      background: var(--gold-light);
+      border-color: var(--gold-light);
+    }
+
+    .empty-products {
+      grid-column: 1 / -1;
+      padding: 40px 0;
+      color: var(--muted);
+      text-align: center;
+      font-size: 13px;
+    }
+
+    .story {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background: var(--cream-dark);
+    }
+
+    .story-image {
+      min-height: 390px;
+      background: url("https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=85") center/cover;
+    }
+
+    .story-copy {
+      align-self: center;
+      padding: 55px clamp(25px, 7vw, 90px);
+    }
+
+    .story-copy h2 {
+      margin: 15px 0;
+      font-family: var(--serif);
+      font-size: clamp(30px, 4vw, 44px);
+      font-weight: 400;
+      line-height: 1.2;
+    }
+
+    .story-copy p {
+      color: #625f57;
+      font-size: 13px;
+      line-height: 1.9;
+    }
+
+    .text-link {
+      display: inline-block;
+      margin-top: 8px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid var(--gold);
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .newsletter {
+      padding: 70px 5%;
+      color: var(--cream);
+      background: var(--black-soft);
+      text-align: center;
+    }
+
+    .newsletter h2 {
+      margin: 13px 0;
+      font-family: var(--serif);
+      font-size: clamp(30px, 4vw, 42px);
+      font-weight: 400;
+    }
+
+    .newsletter p {
+      color: #c9c5bc;
+      font-size: 12px;
+      line-height: 1.8;
+    }
+
+    .newsletter a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 13px 19px;
+      color: var(--black);
+      background: var(--gold-light);
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    footer {
+      padding: 35px 5%;
+      color: #d3cec3;
+      background: var(--black);
+    }
+
+    .footer-inner {
+      width: min(1200px, 100%);
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .footer-logo { color: var(--cream); }
+    .footer-note { margin-top: 8px; color: #aaa59a; font-size: 10px; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 18px; font-size: 11px; }
+
+    .overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 40;
+      background: rgba(0,0,0,.55);
+      opacity: 0;
+      visibility: hidden;
+      transition: .25s;
+    }
+
+    .overlay.open { opacity: 1; visibility: visible; }
+
+    .cart-panel {
+      position: fixed;
+      z-index: 41;
+      top: 0;
+      right: 0;
+      width: min(420px, 100%);
+      height: 100%;
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      background: var(--cream);
+      transform: translateX(100%);
+      transition: transform .3s;
+    }
+
+    .cart-panel.open { transform: translateX(0); }
+
+    .cart-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 18px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .cart-header h2 {
+      margin: 0;
+      font-family: var(--serif);
+      font-size: 26px;
+      font-weight: 400;
+    }
+
+    .close-cart {
+      width: 38px;
+      height: 38px;
+      background: transparent;
+      border: 1px solid var(--border);
+      font-size: 20px;
+    }
+
+    .cart-items { overflow-y: auto; flex: 1; }
+
+    .cart-item {
+      display: grid;
+      grid-template-columns: 65px 1fr;
+      gap: 13px;
+      padding: 17px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .cart-item img {
+      width: 65px;
+      height: 80px;
+      object-fit: cover;
+    }
+
+    .cart-item h3 { margin: 0 0 7px; font-size: 13px; }
+    .cart-item p { margin-bottom: 10px; font-size: 12px; }
+
+    .quantity {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .quantity button {
+      width: 27px;
+      height: 27px;
+      background: transparent;
+      border: 1px solid var(--border);
+    }
+
+    .remove-item {
+      margin-left: auto;
+      color: #8a3f32;
+      background: transparent;
+      border: 0;
+      font-size: 10px;
+    }
+
+    .cart-footer {
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+    }
+
+    .total-line {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+
+    .checkout-button {
+      width: 100%;
+      padding: 15px;
+      color: var(--cream);
+      background: var(--black);
+      border: 0;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .7px;
+    }
+
+    .cart-message {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 10px;
+      line-height: 1.7;
+    }
+
+    .toast {
+      position: fixed;
+      z-index: 60;
+      right: 18px;
+      bottom: 18px;
+      max-width: calc(100% - 36px);
+      padding: 13px 17px;
+      color: var(--cream);
+      background: var(--black);
+      border-left: 3px solid var(--gold);
+      font-size: 12px;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: .25s;
+      pointer-events: none;
+    }
+
+    .toast.show { opacity: 1; transform: translateY(0); }
+
+    @media (max-width: 760px) {
+      .nav { min-height: 66px; gap: 8px; }
+      .logo { font-size: 24px; letter-spacing: 3px; }
+      .nav-links { display: none; }
+      .cart-button { padding: 10px 11px; font-size: 11px; }
+
+      .hero {
+        grid-template-columns: 1fr;
+        min-height: auto;
+      }
+
+      .hero-copy { padding: 55px 7% 40px; }
+      .hero h1 { font-size: clamp(43px, 12vw, 60px); }
+      .hero-image { min-height: 280px; }
+
+      .benefits { padding: 22px 4%; gap: 8px; }
+      .benefit { font-size: 10px; }
+      .benefit small { font-size: 9px; }
+
+      .section { padding: 58px 0; }
+      .section-heading { display: block; }
+      .section-heading p { margin-top: 14px; }
+      .search { max-width: none; }
+
+      .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 25px 12px; }
+      .product-title { font-size: 16px; }
+      .product-bottom { align-items: flex-start; flex-direction: column; }
+      .add-button { width: 100%; padding: 12px 5px; }
+
+      .story { grid-template-columns: 1fr; }
+      .story-image { min-height: 270px; }
+      .story-copy { padding: 42px 7%; }
+
+      .footer-inner { align-items: flex-start; flex-direction: column; }
+      .footer-links { gap: 14px; }
+    }
+  </style>
 </head>
+
 <body>
-<div class="topbar">LUMORA'YI KEŞFET · MODERN YAŞAMIN YENİ HALİ</div>
-<header>
-<a class="logo" href="#">LUMORA</a>
-<nav>
-<a href="#urunler">Ürünler</a>
-<a href="#hikayemiz">Hikâyemiz</a>
-</nav>
-</header>
-<main>
-<section class="hero" id="hikayemiz">
-<div>
-<div class="eyebrow">SADE · MODERN · ZAMANSIZ</div>
-<h1>Yaşam alanına<br>yeni bir ışık.</h1>
-<p>Günlük yaşamı güzelleştiren, işlevselliği estetikle buluşturan ürünleri keşfet. Küçük dokunuşlar, büyük değişimler.</p>
-<a class="btn" href="#urunler">KOLEKSİYONU KEŞFET ↗</a>
-</div>
-<div class="hero-art" role="img" aria-label="LUMORA modern tasarım konsepti"></div>
-</section>
+  <div class="announcement">
+    LUMORA'YA HOŞ GELDİN <span>✦</span> YAŞAM ALANINA ZARAFET KAT
+  </div>
 
-<section class="section" id="urunler">
-<div class="section-head">
-<div><div class="eyebrow">ÖZENLE SEÇİLDİ</div><h2>Öne çıkan ürünler</h2><p>Yaşamına uyum sağlayan akıllı dokunuşlar.</p></div>
-</div>
-<div class="products">
-<article class="product">
-<div class="product-image"><span class="symbol">◉</span></div>
-<div class="product-info">
-<h3>Modern Aydınlatma</h3>
-<div class="price">Fiyatı yakında</div>
-<p>Minimal tasarım, sıcak atmosfer.</p>
-<button class="add" onclick="notify('Modern Aydınlatma')">ÜRÜNÜ İNCELE ↗</button>
-</div>
-</article>
-<article class="product">
-<div class="product-image"><span class="symbol">◇</span></div>
-<div class="product-info">
-<h3>Akıllı Ev Aksesuarı</h3>
-<div class="price">Fiyatı yakında</div>
-<p>İşlevsel detaylarla daha iyi bir ev.</p>
-<button class="add" onclick="notify('Akıllı Ev Aksesuarı')">ÜRÜNÜ İNCELE ↗</button>
-</div>
-</article>
-<article class="product">
-<div class="product-image"><span class="symbol">⌂</span></div>
-<div class="product-info">
-<h3>Yaşam Alanı Tasarımı</h3>
-<div class="price">Fiyatı yakında</div>
-<p>Her köşede sana özel bir dokunuş.</p>
-<button class="add" onclick="notify('Yaşam Alanı Tasarımı')">ÜRÜNÜ İNCELE ↗</button>
-</div>
-</article>
-</div>
-</section>
+  <header>
+    <nav class="nav">
+      <a class="logo" href="#" aria-label="LUMORA ana sayfa">LUMORA<span>.</span></a>
 
-<section class="benefits">
-<div><h3>✧ Özenli Seçim</h3><p>Günlük yaşamı kolaylaştıran tasarım odaklı ürünler.</p></div>
-<div><h3>◇ Şeffaf Alışveriş</h3><p>Ürün detayları ve fiyatlar açıkça paylaşılır.</p></div>
-<div><h3>♡ Müşteri Desteği</h3><p>Soruların için bizimle iletişime geçebilirsin.</p></div>
-</section>
+      <div class="nav-links">
+        <a href="#urunler">Ürünler</a>
+        <a href="#hikayemiz">Hikâyemiz</a>
+        <a href="#iletisim">İletişim</a>
+      </div>
 
-<section class="newsletter">
-<div class="eyebrow">LUMORA DÜNYASI</div>
-<h2>İyi tasarım, iyi hissettirir.</h2>
-<p>Yeni koleksiyonlar ve yaşam alanına ilham veren fikirler.</p>
-<a class="btn" href="mailto:merhaba@lumora.com">BİZE ULAŞ</a>
-</section>
-</main>
-<footer>
-<div><div class="logo">LUMORA</div><p>Modern yaşam için özenle seçilmiş fikirler.</p></div>
-<div><a href="mailto:merhaba@lumora.com">İletişim</a><p>© 2026 LUMORA</p></div>
-</footer>
-<button class="cart" onclick="showCart()">Sepetim (<span id="count">0</span>)</button>
-<script>
-let count=0;
-function notify(name){alert(name+' ürününün detayları yakında eklenecek.');}
-function showCart(){alert('Sepetindeki ürün sayısı: '+count+'. Gerçek sipariş ve ödeme için ürün, stok ve ödeme altyapısı kurulmalıdır.');}
-</script>
+      <button class="cart-button" id="openCart" type="button">
+        Sepetim <strong id="cartCount">0</strong>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">Sade · Modern · Zamansız</div>
+        <h1>Yaşam alanına <em>yeni bir ışık.</em></h1>
+        <p>
+          Günlük yaşamı güzelleştiren, tasarımıyla ilham veren
+          ev ve yaşam ürünlerini LUMORA ile keşfet.
+        </p>
+        <a class="button-gold" href="#urunler">KOLEKSİYONU KEŞFET <span>→</span></a>
+      </div>
+      <div class="hero-image" role="img" aria-label="Modern ve zarif bir yaşam alanı"></div>
+    </section>
+
+    <section class="benefits" aria-label="LUMORA yaklaşımı">
+      <div class="benefit">
+        <span>✧</span>
+        Özenle Seçilen Ürünler
+        <small>Estetik ve işlev bir arada</small>
+      </div>
+      <div class="benefit">
+        <span>◇</span>
+        Sade Tasarım
+        <small>Her alana uyum sağlayan dokunuşlar</small>
+      </div>
+      <div class="benefit">
+        <span>♡</span>
+        Destek Odaklı Hizmet
+        <small>Soruların için bizimle iletişime geç</small>
+      </div>
+    </section>
+
+    <section class="section" id="urunler">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">LUMORA KOLEKSİYONU</div>
+          <h2>Yaşam için seçildi.</h2>
+        </div>
+        <p>
+          Evinin atmosferini küçük ama anlamlı dokunuşlarla
+          değiştirecek ürünleri keşfet.
+        </p>
+      </div>
+
+      <input
+        class="search"
+        id="searchInput"
+        type="search"
+        placeholder="Ürün ara..."
+        aria-label="Ürün ara"
+      >
+
+      <div class="categories" id="categories">
+        <button class="category-button active" data-category="Tümü">Tümü</button>
+        <button class="category-button" data-category="Aydınlatma">Aydınlatma</button>
+        <button class="category-button" data-category="Dekorasyon">Dekorasyon</button>
+        <button class="category-button" data-category="Ev Aksesuarları">Ev Aksesuarları</button>
+      </div>
+
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="story" id="hikayemiz">
+      <div class="story-image" role="img" aria-label="Zarif bir ev dekorasyonu"></div>
+      <div class="story-copy">
+        <div class="eyebrow">LUMORA'NIN YAKLAŞIMI</div>
+        <h2>Güzellik, detaylarda saklı.</h2>
+        <p>
+          LUMORA, yaşam alanlarına modern ve işlevsel dokunuşlar
+          katma fikrinden doğdu. Amacımız, yalnızca bir ürün sunmak
+          değil; günlük yaşamda kendini iyi hissettiren seçimleri
+          bir araya getirmek.
+        </p>
+        <a class="text-link" href="#urunler">ÜRÜNLERİ İNCELE →</a>
+      </div>
+    </section>
+
+    <section class="newsletter" id="iletisim">
+      <div class="eyebrow">BİZİMLE İLETİŞİMDE KAL</div>
+      <h2>LUMORA dünyasını keşfet.</h2>
+      <p>Ürünlerimiz veya sipariş süreçleri hakkında bize ulaşabilirsin.</p>
+      <a href="mailto:merhaba@lumora.com?subject=LUMORA%20Hakk%C4%B1nda">
+        BİZE E-POSTA GÖNDER
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <a class="logo footer-logo" href="#">LUMORA<span>.</span></a>
+        <div class="footer-note">Yaşam alanına zarafet kat.</div>
+      </div>
+      <div class="footer-links">
+        <a href="#urunler">Ürünler</a>
+        <a href="#hikayemiz">Hikâyemiz</a>
+        <a href="#iletisim">İletişim</a>
+      </div>
+      <div class="footer-note">© <span id="year"></span> LUMORA</div>
+    </div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="cart-panel" id="cartPanel" aria-label="Alışveriş sepeti" aria-hidden="true">
+    <div class="cart-header">
+      <h2>Sepetin</h2>
+      <button class="close-cart" id="closeCart" type="button" aria-label="Sepeti kapat">×</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer">
+      <div class="total-line">
+        <span>Ara toplam</span>
+        <strong id="cartTotal">₺0</strong>
+      </div>
+      <button class="checkout-button" id="checkoutButton" type="button">
+        SİPARİŞ İÇİN İLETİŞİME GEÇ
+      </button>
+      <p class="cart-message">
+        Bu sepet şu an bir ön izleme özelliğidir. Gerçek ödeme alınmaz.
+        Sipariş ve teslimat koşullarını satın alma öncesinde doğrulayın.
+      </p>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    // ÖRNEK ÜRÜNLER:
+    // Gerçek ürünlerinizi, fiyatlarınızı ve görsellerinizi buradan değiştirin.
+    const products = [
+      {
+        id: 1,
+        name: "Minimal Masa Lambası",
+        category: "Aydınlatma",
+        price: 899,
+        tag: "ÖNE ÇIKAN",
+        image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=700&q=80"
+      },
+      {
+        id: 2,
+        name: "Modern Seramik Vazo",
+        category: "Dekorasyon",
+        price: 549,
+        tag: "ZAMANSIZ",
+        image: "https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&w=700&q=80"
+      },
+      {
+        id: 3,
+        name: "Dekoratif Masa Aksesuarı",
+        category: "Ev Aksesuarları",
+        price: 399,
+        tag: "",
+        image: "https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?auto=format&fit=crop&w=700&q=80"
+      },
+      {
+        id: 4,
+        name: "Ambiyans Aydınlatma",
+        category: "Aydınlatma",
+        price: 749,
+        tag: "YENİ",
+        image: "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=700&q=80"
+      },
+      {
+        id: 5,
+        name: "Minimal Dekor Tepsisi",
+        category: "Ev Aksesuarları",
+        price: 329,
+        tag: "",
+        image: "https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=700&q=80"
+      },
+      {
+        id: 6,
+        name: "Modern Salon Dekoru",
+        category: "Dekorasyon",
+        price: 629,
+        tag: "",
+        image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=700&q=80"
+      }
+    ];
+
+    let selectedCategory = "Tümü";
+    let cart = [];
+
+    const productGrid = document.getElementById("productGrid");
+    const searchInput = document.getElementById("searchInput");
+    const cartPanel = document.getElementById("cartPanel");
+    const overlay = document.getElementById("overlay");
+    const toast = document.getElementById("toast");
+
+    const formatPrice = amount =>
+      new Intl.NumberFormat("tr-TR", {
+        style: "currency",
+        currency: "TRY",
+        maximumFractionDigits: 0
+      }).format(amount);
+
+    function renderProducts() {
+      const search = searchInput.value.trim().toLocaleLowerCase("tr-TR");
+
+      const filtered = products.filter(product => {
+        const categoryMatch =
+          selectedCategory === "Tümü" ||
+          product.category === selectedCategory;
+
+        const searchMatch =
+          product.name.toLocaleLowerCase("tr-TR").includes(search) ||
+          product.category.toLocaleLowerCase("tr-TR").includes(search);
+
+        return categoryMatch && searchMatch;
+      });
+
+      if (!filtered.length) {
+        productGrid.innerHTML =
+          '<p class="empty-products">Aramana uygun ürün bulunamadı.</p>';
+        return;
+      }
+
+      productGrid.innerHTML = filtered.map(product => `
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img
+              class="product-image"
+              src="${product.image}"
+              alt="${product.name}"
+              loading="lazy"
+              onerror="this.style.display='none'"
+            >
+            ${product.tag ? `<span class="product-tag">${product.tag}</span>` : ""}
+          </div>
+          <div class="product-info">
+            <div class="product-category">${product.category}</div>
+            <h3 class="product-title">${product.name}</h3>
+            <div class="product-bottom">
+              <span class="product-price">${formatPrice(product.price)}</span>
+              <button class="add-button" data-add="${product.id}" type="button">
+                SEPETE EKLE +
+              </button>
+            </div>
+          </div>
+        </article>
+      `).join("");
+    }
+
+    function showToast(message) {
+      toast.textContent = message;
+      toast.classList.add("show");
+      clearTimeout(showToast.timer);
+      showToast.timer = setTimeout(() => toast.classList.remove("show"), 2200);
+    }
+
+    function addToCart(id) {
+      const existing = cart.find(item => item.id === id);
+
+      if (existing) {
+        existing.quantity += 1;
+      } else {
+        cart.push({ id, quantity: 1 });
+      }
+
+      renderCart();
+      showToast("Ürün sepetine eklendi.");
+    }
+
+    function changeQuantity(id, amount) {
+      const item = cart.find(item => item.id === id);
+      if (!item) return;
+
+      item.quantity += amount;
+      cart = cart.filter(item => item.quantity > 0);
+      renderCart();
+    }
+
+    function removeFromCart(id) {
+      cart = cart.filter(item => item.id !== id);
+      renderCart();
+    }
+
+    function renderCart() {
+      const count = cart.reduce((sum, item) => sum + item.quantity, 0);
+      const total = cart.reduce((sum, item) => {
+        const product = products.find(product => product.id === item.id);
+        return sum + (product ? product.price * item.quantity : 0);
+      }, 0);
+
+      document.getElementById("cartCount").textContent = count;
+      document.getElementById("cartTotal").textContent = formatPrice(total);
+
+      if (!cart.length) {
+        document.getElementById("cartItems").innerHTML =
+          '<p style="padding:25px 0;color:#77746c;font-size:13px;">Sepetin şu an boş. Beğendiğin ürünleri ekleyebilirsin.</p>';
+        return;
+      }
+
+      document.getElementById("cartItems").innerHTML = cart.map(item => {
+        const product = products.find(product => product.id === item.id);
+
+        return `
+          <div class="cart-item">
+            <img src="${product.image}" alt="${product.name}">
+            <div>
+              <h3>${product.name}</h3>
+              <p>${formatPrice(product.price)}</p>
+              <div class="quantity">
+                <button data-minus="${product.id}" type="button" aria-label="Adedi azalt">−</button>
+                <span>${item.quantity}</span>
+                <button data-plus="${product.id}" type="button" aria-label="Adedi artır">+</button>
+                <button class="remove-item" data-remove="${product.id}" type="button">Kaldır</button>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    function openCart() {
+      cartPanel.classList.add("open");
+      overlay.classList.add("open");
+      cartPanel.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeCart() {
+      cartPanel.classList.remove("open");
+      overlay.classList.remove("open");
+      cartPanel.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+    }
+
+    document.getElementById("categories").addEventListener("click", event => {
+      const button = event.target.closest("[data-category]");
+      if (!button) return;
+
+      selectedCategory = button.dataset.category;
+
+      document.querySelectorAll(".category-button").forEach(item => {
+        item.classList.toggle("active", item === button);
+      });
+
+      renderProducts();
+    });
+
+    searchInput.addEventListener("input", renderProducts);
+
+    productGrid.addEventListener("click", event => {
+      const button = event.target.closest("[data-add]");
+      if (button) addToCart(Number(button.dataset.add));
+    });
+
+    document.getElementById("cartItems").addEventListener("click", event => {
+      const plus = event.target.closest("[data-plus]");
+      const minus = event.target.closest("[data-minus]");
+      const remove = event.target.closest("[data-remove]");
+
+      if (plus) changeQuantity(Number(plus.dataset.plus), 1);
+      if (minus) changeQuantity(Number(minus.dataset.minus), -1);
+      if (remove) removeFromCart(Number(remove.dataset.remove));
+    });
+
+    document.getElementById("openCart").addEventListener("click", openCart);
+    document.getElementById("closeCart").addEventListener("click", closeCart);
+    overlay.addEventListener("click", closeCart);
+
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape") closeCart();
+    });
+
+    document.getElementById("checkoutButton").addEventListener("click", () => {
+      if (!cart.length) {
+        showToast("Önce sepetine ürün ekle.");
+        return;
+      }
+
+      const lines = cart.map(item => {
+        const product = products.find(product => product.id === item.id);
+        return `${product.name} x ${item.quantity} — ${formatPrice(product.price * item.quantity)}`;
+      });
+
+      const total = cart.reduce((sum, item) => {
+        const product = products.find(product => product.id === item.id);
+        return sum + product.price * item.quantity;
+      }, 0);
+
+      const subject = encodeURIComponent("LUMORA sipariş talebi");
+      const body = encodeURIComponent(
+        "Merhaba LUMORA,\n\nAşağıdaki ürünler hakkında sipariş vermek istiyorum:\n\n" +
+        lines.join("\n") +
+        "\n\nAra toplam: " + formatPrice(total) +
+        "\n\nLütfen stok, kargo ve ödeme bilgilerini paylaşın."
+      );
+
+      window.location.href =
+        "mailto:merhaba@lumora.com?subject=" + subject + "&body=" + body;
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    renderProducts();
+    renderCart();
+  </script>
 </body>
 </html>
