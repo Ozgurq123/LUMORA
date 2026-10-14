@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LUMORA | Modern Yaşam</title>
+<meta name="description" content="LUMORA ile yaşam alanlarına modern dokunuşlar kat. Evin için özenle seçilmiş ürünleri keşfet.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f7f3;--ink:#20231f;--muted:#77786f;--accent:#a7a889}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink)}
+a{color:inherit;text-decoration:none}
+.topbar{text-align:center;background:#252821;color:white;padding:10px;font-size:11px;letter-spacing:1px}
+header{display:flex;align-items:center;justify-content:space-between;padding:22px 6%;border-bottom:1px solid #e6e4dc}
+.logo{font-size:27px;font-weight:700;letter-spacing:5px}
+nav{display:flex;gap:22px;font-size:13px}
+.hero{padding:70px 6%;display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+.eyebrow{font-size:11px;letter-spacing:3px;color:var(--muted);margin-bottom:20px}
+h1{font-size:clamp(38px,6vw,66px);line-height:1.05;letter-spacing:-2px;margin-bottom:22px}
+.hero p{font-size:15px;color:var(--muted);line-height:1.8;max-width:420px}
+.btn{display:inline-block;background:var(--ink);color:white;padding:16px 25px;margin-top:27px;font-size:12px;letter-spacing:1px;border:0;cursor:pointer}
+.hero-art{min-height:390px;background:linear-gradient(145deg,#e5e1d4,#b8b9a4);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.hero-art:before{content:"";width:210px;height:270px;border-radius:110px 110px 20px 20px;background:linear-gradient(100deg,#f5f1e5,#9b9d83);box-shadow:25px 30px 55px #77786f66;transform:rotate(-8deg)}
+.hero-art:after{content:"L";position:absolute;font-size:180px;font-weight:bold;color:#ffffff38}
+.section{padding:55px 6%}
+.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:25px;gap:15px}
+h2{font-size:29px;letter-spacing:-1px}
+.section-head p{color:var(--muted);font-size:12px;margin-top:10px}
+.products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.product-image{aspect-ratio:4/4.5;background:#e9e6dd;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.product-image img{width:100%;height:100%;object-fit:cover}
+.product-image .symbol{font-size:70px;color:#8b8c76}
+.product-info{padding:15px 0}
+.product-info h3{font-size:14px;font-weight:500;margin-bottom:9px}
+.price{font-size:14px;font-weight:bold}
+.product-info p{font-size:11px;color:var(--muted);margin-top:8px}
+.add{width:100%;margin-top:12px;padding:12px;border:1px solid #d4d2c8;background:transparent;cursor:pointer;font-size:12px}
+.add:hover{background:var(--ink);color:white}
+.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;background:#eeede6;padding:35px 6%;text-align:center}
+.benefits h3{font-size:13px;margin-bottom:9px}
+.benefits p{font-size:11px;line-height:1.7;color:var(--muted)}
+.newsletter{text-align:center;padding:65px 6%}
+.newsletter p{color:var(--muted);margin-top:15px;font-size:13px}
+footer{background:#252821;color:white;padding:35px 6%;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:12px}
+footer p{color:#c4c5bb;margin-top:10px}
+.cart{position:fixed;bottom:18px;right:18px;border:0;background:#252821;color:white;border-radius:30px;padding:15px 20px;box-shadow:0 5px 25px #0002;cursor:pointer}
+@media(max-width:650px){
+header{padding:18px 5%}.logo{font-size:23px}nav{gap:12px;font-size:11px}
+.hero{grid-template-columns:1fr;padding:45px 5%;gap:28px}
+.hero-art{min-height:280px}
+.section{padding:40px 5%}.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.section-head{align-items:start;flex-direction:column}
+.benefits{grid-template-columns:1fr;gap:28px}
+h2{font-size:25px}
+}
+</style>
+</head>
+<body>
+<div class="topbar">LUMORA'YI KEŞFET · MODERN YAŞAMIN YENİ HALİ</div>
+<header>
+<a class="logo" href="#">LUMORA</a>
+<nav>
+<a href="#urunler">Ürünler</a>
+<a href="#hikayemiz">Hikâyemiz</a>
+</nav>
+</header>
+<main>
+<section class="hero" id="hikayemiz">
+<div>
+<div class="eyebrow">SADE · MODERN · ZAMANSIZ</div>
+<h1>Yaşam alanına<br>yeni bir ışık.</h1>
+<p>Günlük yaşamı güzelleştiren, işlevselliği estetikle buluşturan ürünleri keşfet. Küçük dokunuşlar, büyük değişimler.</p>
+<a class="btn" href="#urunler">KOLEKSİYONU KEŞFET ↗</a>
+</div>
+<div class="hero-art" role="img" aria-label="LUMORA modern tasarım konsepti"></div>
+</section>
+
+<section class="section" id="urunler">
+<div class="section-head">
+<div><div class="eyebrow">ÖZENLE SEÇİLDİ</div><h2>Öne çıkan ürünler</h2><p>Yaşamına uyum sağlayan akıllı dokunuşlar.</p></div>
+</div>
+<div class="products">
+<article class="product">
+<div class="product-image"><span class="symbol">◉</span></div>
+<div class="product-info">
+<h3>Modern Aydınlatma</h3>
+<div class="price">Fiyatı yakında</div>
+<p>Minimal tasarım, sıcak atmosfer.</p>
+<button class="add" onclick="notify('Modern Aydınlatma')">ÜRÜNÜ İNCELE ↗</button>
+</div>
+</article>
+<article class="product">
+<div class="product-image"><span class="symbol">◇</span></div>
+<div class="product-info">
+<h3>Akıllı Ev Aksesuarı</h3>
+<div class="price">Fiyatı yakında</div>
+<p>İşlevsel detaylarla daha iyi bir ev.</p>
+<button class="add" onclick="notify('Akıllı Ev Aksesuarı')">ÜRÜNÜ İNCELE ↗</button>
+</div>
+</article>
+<article class="product">
+<div class="product-image"><span class="symbol">⌂</span></div>
+<div class="product-info">
+<h3>Yaşam Alanı Tasarımı</h3>
+<div class="price">Fiyatı yakında</div>
+<p>Her köşede sana özel bir dokunuş.</p>
+<button class="add" onclick="notify('Yaşam Alanı Tasarımı')">ÜRÜNÜ İNCELE ↗</button>
+</div>
+</article>
+</div>
+</section>
+
+<section class="benefits">
+<div><h3>✧ Özenli Seçim</h3><p>Günlük yaşamı kolaylaştıran tasarım odaklı ürünler.</p></div>
+<div><h3>◇ Şeffaf Alışveriş</h3><p>Ürün detayları ve fiyatlar açıkça paylaşılır.</p></div>
+<div><h3>♡ Müşteri Desteği</h3><p>Soruların için bizimle iletişime geçebilirsin.</p></div>
+</section>
+
+<section class="newsletter">
+<div class="eyebrow">LUMORA DÜNYASI</div>
+<h2>İyi tasarım, iyi hissettirir.</h2>
+<p>Yeni koleksiyonlar ve yaşam alanına ilham veren fikirler.</p>
+<a class="btn" href="mailto:merhaba@lumora.com">BİZE ULAŞ</a>
+</section>
+</main>
+<footer>
+<div><div class="logo">LUMORA</div><p>Modern yaşam için özenle seçilmiş fikirler.</p></div>
+<div><a href="mailto:merhaba@lumora.com">İletişim</a><p>© 2026 LUMORA</p></div>
+</footer>
+<button class="cart" onclick="showCart()">Sepetim (<span id="count">0</span>)</button>
+<script>
+let count=0;
+function notify(name){alert(name+' ürününün detayları yakında eklenecek.');}
+function showCart(){alert('Sepetindeki ürün sayısı: '+count+'. Gerçek sipariş ve ödeme için ürün, stok ve ödeme altyapısı kurulmalıdır.');}
+</script>
+</body>
+</html>
